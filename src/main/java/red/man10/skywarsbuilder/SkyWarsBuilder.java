@@ -35,7 +35,9 @@ public final class SkyWarsBuilder extends JavaPlugin {
                         return true;
                     }
                     if (args.length != 2) {
-                        p.sendMessage("§l§n引数が足りません");
+                        p.sendMessage("§l引数が足りません");
+                        p.sendMessage("§l/skycilcle <半径> <数>");
+
                         return true;
                     }
                     for(Location l : getCircle(p.getLocation(), Integer.parseInt(args[0]), Integer.parseInt(args[1]))){
@@ -44,7 +46,7 @@ public final class SkyWarsBuilder extends JavaPlugin {
 
                 }catch (NumberFormatException e){
                     Player p = (Player) sender;
-                    p.sendMessage("範囲等は数字のみです");
+                    p.sendMessage("§l範囲等は数字のみです");
                     return true;
                 }
             }
