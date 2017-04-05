@@ -34,6 +34,10 @@ public final class SkyWarsBuilder extends JavaPlugin {
                         p.sendMessage("§e§lCreated By Sho0");
                         return true;
                     }
+                    if(!p.hasPermission("man10.skywars.skycircle")){
+                        p.sendMessage("§lあなたには権限はありません");
+                        return true;
+                    }
                     if (args.length != 2) {
                         p.sendMessage("§l引数が足りません");
                         p.sendMessage("§l/skycilcle <半径> <数>");
