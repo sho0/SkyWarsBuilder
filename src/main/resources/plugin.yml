@@ -1,0 +1,8 @@
+name: SkyWarsBuilder
+version: ${project.version}
+main: red.man10.skywarsbuilder.SkyWarsBuilder
+authors: [Sho0]
+description: tools for building skywars
+website: man10.red
+commands:
+ skycircle:

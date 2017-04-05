@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="SkyWarsBuilder:jar">
+    <output-path>$PROJECT_DIR$/../..</output-path>
+    <root id="archive" name="SkyWarsBuilder.jar">
+      <element id="module-output" name="SkyWarsBuilder" />
+    </root>
+  </artifact>
+</component>
